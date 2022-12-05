@@ -91,7 +91,7 @@ const NewProj = () => {
     }
     else {
       const authtoken = localStorage.getItem('auth-token');
-      const response = await fetch('http://localhost:8181/api/auth/uploadproject', {
+      const response = await fetch('https://devcodebackend.stonecss.com/api/auth/uploadproject', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

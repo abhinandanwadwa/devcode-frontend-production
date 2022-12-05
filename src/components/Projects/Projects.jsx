@@ -11,7 +11,7 @@ const Projects = () => {
 
     const getProjects = async() => {
         const authtoken = localStorage.getItem('auth-token');
-        const response = await fetch('http://localhost:8181/api/auth/getprojects', {
+        const response = await fetch('https://devcodebackend.stonecss.com/api/auth/getprojects', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const Projects = () => {
 
     const collaborateClick = async (id, link) => {
         const authtoken = localStorage.getItem('auth-token');
-        const response = await fetch('http://localhost:8181/api/auth/increaseclick', {
+        const response = await fetch('https://devcodebackend.stonecss.com/api/auth/increaseclick', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

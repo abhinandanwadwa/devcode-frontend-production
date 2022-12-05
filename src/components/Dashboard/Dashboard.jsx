@@ -14,7 +14,7 @@ const Dashboard = () => {
     const getMyProjects = async () => {
         const authtoken = localStorage.getItem('auth-token');
 
-        const response = await fetch('http://localhost:8181/api/auth/getmyprojects', {
+        const response = await fetch('https://devcodebackend.stonecss.com/api/auth/getmyprojects', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const Dashboard = () => {
 
     const countClicks = async () => {
         const authtoken = localStorage.getItem('auth-token');
-        const response = await fetch('http://localhost:8181/api/auth/countclicks', {
+        const response = await fetch('https://devcodebackend.stonecss.com/api/auth/countclicks', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
